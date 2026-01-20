@@ -114,6 +114,7 @@ pub enum RuntimeFlavor {
     /// The flavor that executes all tasks on the current thread.
     CurrentThread,
     /// The flavor that executes tasks across multiple threads.
+    #[cfg(feature = "rt-multi-thread")]
     MultiThread,
 }
 
